@@ -42,7 +42,7 @@ for ability_poke in data_pokemon2['abilities']:
 print("Sus estadisticas son: ")
 for stats_poke in data_pokemon2['stats']:
     print(f"🔥 {stats_poke['stat']['name']}: {stats_poke['base_stat']}")
-attack2 = next(stat["base_stat"] for stat in data_pokemon1["stats"] if stat["stat"]["name"] == "attack")
+attack2 = next(stat["base_stat"] for stat in data_pokemon2["stats"] if stat["stat"]["name"] == "attack")
 
 
 if attack2 > attack1:
